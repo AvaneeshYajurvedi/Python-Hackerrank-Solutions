@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        data = input().split()
+        name, scores = data[0], list(map(float, data[1:]))
+        student_marks[name] = scores
+    
+    query_name = input().strip()
+    avg = sum(student_marks[query_name]) / len(student_marks[query_name])
+    print(f"{avg:.2f}")
