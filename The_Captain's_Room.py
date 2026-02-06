@@ -1,0 +1,5 @@
+n=int(input())
+rooms=list(map(int,input().split()))
+unique_rooms=set(rooms)
+captain_room=(sum(unique_rooms)*n-sum(rooms))//(n-1)
+print(captain_room)
