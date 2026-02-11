@@ -4,4 +4,4 @@ n=[]
 for i in range(a):
     n.append(list(map(float,input().split())))
 n=numpy.array(n)
-print(numpy.linalg.det(n))
+print(round(numpy.linalg.det(n), 2))
